@@ -31,8 +31,8 @@
     "adb shell am instrument -w com.example.android.apis.tests/android.test.InstrumentationTestRunner"
     -->
   <!--  android:targetPackage="com.example.android.apis"-->
-    <instrumentation android:name="android.test.InstrumentationTestRunner"
+    <!--<instrumentation android:name="android.test.InstrumentationTestRunner"
         android:targetPackage="com.example.android.apis"
-                     android:label="Tests for Api Demos."/>
+                     android:label="Tests for Api Demos."/>-->
 
 </manifest>
