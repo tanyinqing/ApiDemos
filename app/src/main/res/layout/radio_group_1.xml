@@ -25,19 +25,29 @@
         android:checkedButton="@+id/lunch"
         android:id="@+id/menu">
         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/radio_group_1_breakfast"
             android:id="@+id/breakfast"
             />
         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/radio_group_1_lunch"
             android:id="@id/lunch" />
         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/radio_group_1_dinner"
             android:id="@+id/dinner" />
         <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/radio_group_1_all"
             android:id="@+id/all" />
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/radio_group_1_selection"
             android:id="@+id/choice" />
     </RadioGroup>

@@ -38,7 +38,8 @@
             android:background="@drawable/green"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" 
-            app:text="Green" app:textColor="#ffffffff" />
+            app:text="Green"
+            app:textColor="#ffffffff" />
 
 </LinearLayout>
 

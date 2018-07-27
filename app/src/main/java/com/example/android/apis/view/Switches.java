@@ -31,15 +31,12 @@ public class Switches extends Activity implements CompoundButton.OnCheckedChange
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        
         setContentView(R.layout.switches);
-        
         Switch s = (Switch) findViewById(R.id.monitored_switch);
         if (s != null) {
             s.setOnCheckedChangeListener(this);
         }
     }
-
     @Override
     public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
        Toast.makeText(this, "Monitored switch is " + (isChecked ? "on" : "off"),

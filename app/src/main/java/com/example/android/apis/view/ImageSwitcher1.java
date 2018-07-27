@@ -36,21 +36,17 @@ import android.widget.ViewSwitcher;
 
 public class ImageSwitcher1 extends Activity implements
         AdapterView.OnItemSelectedListener, ViewSwitcher.ViewFactory {
-
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
-
         setContentView(R.layout.image_switcher_1);
-
         mSwitcher = (ImageSwitcher) findViewById(R.id.switcher);
         mSwitcher.setFactory(this);
         mSwitcher.setInAnimation(AnimationUtils.loadAnimation(this,
                 android.R.anim.fade_in));
         mSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this,
                 android.R.anim.fade_out));
-
         Gallery g = (Gallery) findViewById(R.id.gallery);
         g.setAdapter(new ImageAdapter(this));
         g.setOnItemSelectedListener(this);
@@ -78,22 +74,17 @@ public class ImageSwitcher1 extends Activity implements
         public ImageAdapter(Context c) {
             mContext = c;
         }
-
         public int getCount() {
             return mThumbIds.length;
         }
-
         public Object getItem(int position) {
             return position;
         }
-
         public long getItemId(int position) {
             return position;
         }
-
         public View getView(int position, View convertView, ViewGroup parent) {
             ImageView i = new ImageView(mContext);
-
             i.setImageResource(mThumbIds[position]);
             i.setAdjustViewBounds(true);
             i.setLayoutParams(new Gallery.LayoutParams(
@@ -101,9 +92,7 @@ public class ImageSwitcher1 extends Activity implements
             i.setBackgroundResource(R.drawable.picture_frame);
             return i;
         }
-
         private Context mContext;
-
     }
 
     private Integer[] mThumbIds = {

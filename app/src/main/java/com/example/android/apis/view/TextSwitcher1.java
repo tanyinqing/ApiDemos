@@ -32,32 +32,23 @@ import android.widget.ViewSwitcher;
 /**
  * Uses a TextSwitcher.
  */
-public class TextSwitcher1 extends Activity implements ViewSwitcher.ViewFactory,
-        View.OnClickListener {
-
+public class TextSwitcher1 extends Activity implements ViewSwitcher.ViewFactory, View.OnClickListener {
     private TextSwitcher mSwitcher;
-
     private int mCounter = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.text_switcher_1);
-
         mSwitcher = (TextSwitcher) findViewById(R.id.switcher);
         mSwitcher.setFactory(this);
-
         Animation in = AnimationUtils.loadAnimation(this,
                 android.R.anim.fade_in);
         Animation out = AnimationUtils.loadAnimation(this,
                 android.R.anim.fade_out);
         mSwitcher.setInAnimation(in);
         mSwitcher.setOutAnimation(out);
-
         Button nextButton = (Button) findViewById(R.id.next);
         nextButton.setOnClickListener(this);
-
         updateCounter();
     }
 

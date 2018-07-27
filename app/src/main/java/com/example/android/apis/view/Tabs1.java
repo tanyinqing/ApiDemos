@@ -29,14 +29,11 @@ import com.example.android.apis.R;
  * for its indicators and views by id from a layout file ({@link TabSpec#setContent(int)}).
  */
 public class Tabs1 extends TabActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TabHost tabHost = getTabHost();
-        
         LayoutInflater.from(this).inflate(R.layout.tabs1, tabHost.getTabContentView(), true);
-
         tabHost.addTab(tabHost.newTabSpec("tab1")
                 .setIndicator("tab1")
                 .setContent(R.id.view1));
