@@ -5,7 +5,7 @@
 - Text
 - [各种字体样式](app/src/main/java/com/example/android/apis/text/Link.java)
 - LogTextBox1
-- Views
+- Views  版块和区域
 - Animation2  Views/Animation/Push
 - Animation1  Views/Animation/Shake
 - Buttons1  Views/Buttons
@@ -19,9 +19,9 @@
 - ScrollBar1  Views/ScrollBars/1. Basic
 - Tabs1  Views/Tabs/1. Content By Id
 - Tabs3   Views/Tabs/3. Content By Intent
--
--
--
+- WebView1  Views/WebView
+- Content 版块和区域
+- ExternalStorage  Content/Storage/External Storage
 -
 -
 -
